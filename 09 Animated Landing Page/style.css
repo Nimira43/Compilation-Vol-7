@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Architects+Daughter&family=Bangers&family=Black+Ops+One&family=Bruno+Ace+SC&family=Bungee+Spice&family=Cabin+Sketch&family=Caveat&family=Creepster&family=Dancing+Script&family=East+Sea+Dokdo&family=Eater&family=Ewert&family=Fredericka+the+Great&family=Great+Vibes&family=Henny+Penny&family=Homemade+Apple&family=Instrument+Serif&family=Italianno&family=Jacques+Francois+Shadow&family=Kristi&family=Libre+Barcode+39+Text&family=Liu+Jian+Mao+Cao&family=Londrina+Outline&family=Love+Ya+Like+A+Sister&family=Loved+by+the+King&family=MedievalSharp&family=Monoton&family=Monsieur+La+Doulaise&family=Mountains+of+Christmas&family=Nabla&family=Nanum+Gothic&family=Nunito+Sans&family=Orbitron&family=Pirata+One&family=Press+Start+2P&family=Rajdhani&family=Rampart+One&family=Rubik+80s+Fade&family=Rubik+Burned&family=Rubik+Iso&family=Rubik+Maze&family=Rubik+Microbe&family=Rubik+Moonrocks&family=Rubik+Pixels&family=Rubik+Puddles&family=Rubik+Storm&family=Rubik+Vinyl&family=Rye&family=Sacramento&family=Satisfy&family=Shadows+Into+Light&family=Slackey&family=Tilt+Prism&family=UnifrakturMaguntia&family=Yanone+Kaffeesatz&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: forestgreen;
+}
+
+.landing {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(19, 11, 0, 0.8), rgba(22, 23, 1, 0.8)), url('./pexels-felice-cristiano-1479242.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top;
+    animation: landingAnim 4s forwards;
+}
+
+@keyframes landingAnim {
+    0%,
+    50% {
+        clip-path: polygon(50% 0,
+                            70% 0,
+                            100% 0,
+                            100% 100%,
+                            0 100%,
+                            0 0,
+                            30% 0);
+    }
+
+    100% {
+        clip-path: polygon(50% 4%,
+                            70% 10%,
+                            95% 0,
+                            95% 87%,
+                            5% 100%,
+                            5% 15%,
+                            31% 10%);
+        background-position: center bottom;
+    }
+    
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    background-color: forestgreen;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transform-origin: top;
+    animation: bgAnim 2s forwards;
+}
+
+@keyframes bgAnim {
+    0%,
+    50% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(0);
+    }
+}

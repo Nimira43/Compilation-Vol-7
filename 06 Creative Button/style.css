@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Architects+Daughter&family=Bangers&family=Black+Ops+One&family=Bruno+Ace+SC&family=Bungee+Spice&family=Cabin+Sketch&family=Caveat&family=Creepster&family=Dancing+Script&family=East+Sea+Dokdo&family=Eater&family=Ewert&family=Fredericka+the+Great&family=Great+Vibes&family=Henny+Penny&family=Homemade+Apple&family=Instrument+Serif&family=Italianno&family=Jacques+Francois+Shadow&family=Kristi&family=Libre+Barcode+39+Text&family=Liu+Jian+Mao+Cao&family=Londrina+Outline&family=Love+Ya+Like+A+Sister&family=Loved+by+the+King&family=MedievalSharp&family=Monoton&family=Monsieur+La+Doulaise&family=Mountains+of+Christmas&family=Nabla&family=Nanum+Gothic&family=Nunito+Sans&family=Orbitron&family=Pirata+One&family=Press+Start+2P&family=Rajdhani&family=Rampart+One&family=Rubik+80s+Fade&family=Rubik+Burned&family=Rubik+Iso&family=Rubik+Maze&family=Rubik+Microbe&family=Rubik+Moonrocks&family=Rubik+Pixels&family=Rubik+Puddles&family=Rubik+Storm&family=Rubik+Vinyl&family=Rye&family=Sacramento&family=Satisfy&family=Shadows+Into+Light&family=Slackey&family=Tilt+Prism&family=UnifrakturMaguntia&family=Yanone+Kaffeesatz&display=swap');
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Slackey', sans-serif;
+}
+
+body {
+    background: url('./pexels-simon-berger-1323550.jpg') no-repeat center center/cover;     
+}
+
+.btn-wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 70px;
+    background: linear-gradient(74deg, darkgoldenrod, darkred, black);
+    color: silver;
+    border-radius: 50px;
+    border: 2px solid black;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.btn span {
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    transition: top 0.2s;
+}
+
+.btn-text-one {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.btn-text-two {
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.btn:hover .btn-text-one {
+    top: -100%;
+}
+
+.btn:hover .btn-text-two {
+    top: 50%;
+}
+
+
+
+
+
+

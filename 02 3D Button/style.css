@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Caveat&family=Dosis&family=Fontdiner+Swanky&family=IBM+Plex+Sans&family=Merienda&family=Nosifer&family=Rubik+Maze&family=Shantell+Sans&family=Signika+Negative&family=Six+Caps&family=Stick+No+Bills&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Ewert&family=Faster+One&family=Fredericka+the+Great&family=Inspiration&family=Nabla&family=Petit+Formal+Script&family=Sancreek&family=Smokum&family=Stint+Ultra+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Architects+Daughter&family=Bangers&family=Black+Ops+One&family=Bruno+Ace+SC&family=Bungee+Spice&family=Cabin+Sketch&family=Caveat&family=Creepster&family=Dancing+Script&family=East+Sea+Dokdo&family=Eater&family=Ewert&family=Fredericka+the+Great&family=Great+Vibes&family=Henny+Penny&family=Homemade+Apple&family=Instrument+Serif&family=Italianno&family=Jacques+Francois+Shadow&family=Kristi&family=Libre+Barcode+39+Text&family=Liu+Jian+Mao+Cao&family=Londrina+Outline&family=Love+Ya+Like+A+Sister&family=Loved+by+the+King&family=MedievalSharp&family=Monoton&family=Monsieur+La+Doulaise&family=Mountains+of+Christmas&family=Nabla&family=Nanum+Gothic&family=Nunito+Sans&family=Orbitron&family=Pirata+One&family=Press+Start+2P&family=Rajdhani&family=Rampart+One&family=Rubik+80s+Fade&family=Rubik+Burned&family=Rubik+Iso&family=Rubik+Maze&family=Rubik+Microbe&family=Rubik+Moonrocks&family=Rubik+Pixels&family=Rubik+Puddles&family=Rubik+Storm&family=Rubik+Vinyl&family=Rye&family=Sacramento&family=Satisfy&family=Shadows+Into+Light&family=Slackey&family=Tilt+Prism&family=UnifrakturMaguntia&family=Yanone+Kaffeesatz&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8)), url('./pexels-alex-blokstra-1327373.jpg') center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.btn {
+    width: 350px;
+    height: 100px;
+    background: linear-gradient(55deg, darkgoldenrod, darkred);
+    font-family: 'Nabla', sans-serif;
+    font-size: 40px;
+    text-shadow: 0 10px 10px black;
+    border: 0;
+    
+    /*
+    border: 5px solid aqua;
+    border-radius: 50px;
+    box-shadow: 2px 2px 8px 3px rgba(3, 240, 240, 0.897);
+    */
+    
+    letter-spacing: 2px;
+    cursor: pointer;
+    transform: rotateX(70deg) rotateZ(30deg);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.btn::before {
+    content: '';
+    width: 100%;
+    height: 15px;
+    background-color: darkred;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+
+.btn::after {
+    content: '';
+    width: 15px;
+    height: 100%;
+    background-color: darkgoldenrod;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotateY(-90deg);
+    transform-origin: right;
+}
+
+.btn:hover {
+    transform: rotateX(30deg) rotateZ(0);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+
+/*    
+.btn {
+    width: 350px;
+    height: 100px;
+    background: linear-gradient(55deg, darkgoldenrod, darkred);
+    font-family: 'Nabla', sans-serif;
+    font-size: 40px;
+    text-shadow: 0 10px 10px black;
+    border: 5px solid rgb(0, 242, 255);
+    border-radius: 50px;
+    box-shadow: 9px 1px 8px 3px rgba(3, 240, 240, 0.897);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+*/

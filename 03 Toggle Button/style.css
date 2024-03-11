@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Architects+Daughter&family=Bangers&family=Black+Ops+One&family=Bruno+Ace+SC&family=Bungee+Spice&family=Cabin+Sketch&family=Caveat&family=Creepster&family=Dancing+Script&family=East+Sea+Dokdo&family=Eater&family=Ewert&family=Fredericka+the+Great&family=Great+Vibes&family=Henny+Penny&family=Homemade+Apple&family=Instrument+Serif&family=Italianno&family=Jacques+Francois+Shadow&family=Kristi&family=Libre+Barcode+39+Text&family=Liu+Jian+Mao+Cao&family=Londrina+Outline&family=Love+Ya+Like+A+Sister&family=Loved+by+the+King&family=MedievalSharp&family=Monoton&family=Monsieur+La+Doulaise&family=Mountains+of+Christmas&family=Nabla&family=Nanum+Gothic&family=Nunito+Sans&family=Orbitron&family=Pirata+One&family=Press+Start+2P&family=Rajdhani&family=Rampart+One&family=Rubik+80s+Fade&family=Rubik+Burned&family=Rubik+Iso&family=Rubik+Maze&family=Rubik+Microbe&family=Rubik+Moonrocks&family=Rubik+Pixels&family=Rubik+Puddles&family=Rubik+Storm&family=Rubik+Vinyl&family=Rye&family=Sacramento&family=Satisfy&family=Shadows+Into+Light&family=Slackey&family=Tilt+Prism&family=UnifrakturMaguntia&family=Yanone+Kaffeesatz&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url('./pexels-nextvoyage-1476880.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle {
+    width: 150px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50px;
+    box-shadow: inset 0 2px 10px #0a0707;
+    position: relative;
+    transition: background-color 0.5s;
+}
+
+.circle {
+    width: 5px;
+    height: 5px;
+    border: 27px solid darkgoldenrod;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    left: -5px;
+    box-shadow: 2px 2px 8px rgb(26, 19, 1);
+    transition: left 0.5s;
+}
+
+#check:checked ~ .toggle .circle {
+    left: calc(100% - 54px);
+}
+
+#check:checked ~ .toggle {
+    background-color: green;
+}
+
+

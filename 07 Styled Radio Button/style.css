@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Architects+Daughter&family=Bangers&family=Black+Ops+One&family=Bruno+Ace+SC&family=Bungee+Spice&family=Cabin+Sketch&family=Caveat&family=Creepster&family=Dancing+Script&family=East+Sea+Dokdo&family=Eater&family=Ewert&family=Fredericka+the+Great&family=Great+Vibes&family=Henny+Penny&family=Homemade+Apple&family=Instrument+Serif&family=Italianno&family=Jacques+Francois+Shadow&family=Kristi&family=Libre+Barcode+39+Text&family=Liu+Jian+Mao+Cao&family=Londrina+Outline&family=Love+Ya+Like+A+Sister&family=Loved+by+the+King&family=MedievalSharp&family=Monoton&family=Monsieur+La+Doulaise&family=Mountains+of+Christmas&family=Nabla&family=Nanum+Gothic&family=Nunito+Sans&family=Orbitron&family=Pirata+One&family=Press+Start+2P&family=Rajdhani&family=Rampart+One&family=Rubik+80s+Fade&family=Rubik+Burned&family=Rubik+Iso&family=Rubik+Maze&family=Rubik+Microbe&family=Rubik+Moonrocks&family=Rubik+Pixels&family=Rubik+Puddles&family=Rubik+Storm&family=Rubik+Vinyl&family=Rye&family=Sacramento&family=Satisfy&family=Shadows+Into+Light&family=Slackey&family=Tilt+Prism&family=UnifrakturMaguntia&family=Yanone+Kaffeesatz&display=swap');
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background: url('./pexels-bri-schneiter-346529.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}    
+
+.option {
+    width: 400px;
+    height: 100px;
+    background-color: skyblue;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border: 3px solid darkblue;
+    border-radius: 25px;
+    position: relative;
+}
+
+.option input {
+    display: none;
+}
+
+.option label {
+    font-family: 'MedievalSharp', sans-serif;
+    font-size: 60px;
+    color: darkblue;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.option label::after {
+    content: '';
+    position: absolute;
+    right: 11%;
+    width: 50px;
+    height: 50px;
+    border: 5px solid darkgoldenrod;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(77, 52, 3, 0.8);
+}
+
+.option label::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 13.4%;
+    transform: translateY(-60%);
+    width: 40px;
+    height: 40px;
+    background-color: darkred;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(77, 3, 3, 0.8);
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.option input:checked ~ label::before {
+    opacity: 1;
+}
