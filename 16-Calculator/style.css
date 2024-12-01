@@ -23,7 +23,7 @@
 }
 
 body {
-  background-color: var(--dark);
+  background-color: var(--primary);
   color: var(--light);
   font-family: var(--font-main);
   display: flex;
@@ -38,8 +38,10 @@ h1 {
   font-weight: 700;
   border: var(--size-1) solid var(--secondary-dk);
   border-radius: var(--b-radius);
+  background-color: var(--dark);
   padding: var(--size-md);
-  margin-bottom: var(--size-lg);
+  margin: var(--size-lg);
+  margin-left: 250px;
   color: var(--light);
 }
 
@@ -47,9 +49,9 @@ h1 {
   max-width: 600px;
   margin: auto;
   padding: var(--size-lg);
-  background: var(--grey-dk);
+  background: var(--dark);
   border-radius: var(--b-radius);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: var(--size-1) solid var(--secondary-dk);
 }
 
 .output {
@@ -57,7 +59,7 @@ h1 {
   line-height: 50px;
   font-size: 3em;
   text-align: center;
-  background-color: var(--primary);
+  background-color: var(--light);
   color: var(--light);
   margin-bottom: var(--size-lg);
   border-radius: var(--b-radius);
