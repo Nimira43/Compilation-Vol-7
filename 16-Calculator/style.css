@@ -1,22 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
 
-body {
-    font-family: 'Rubik Iso', sans-serif;
-    position: absolute;
-    background-color: darkred;
-    color: darkgoldenrod;
-    align-items: center;
-    justify-content: center;
-    padding-left: 400px;
+:root {
+  --light: #fffaf0;
+  --dark: #111;
+  --grey-xl: #eee;
+  --grey-lg: #ccc;
+  --grey-md: #888;
+  --grey-dk: #333;
+  --primary: #012222;
+  --secondary-dk: #008080;
+  --secondary-lg: #87ceeb;
+  --b-radius: 3px;
+  --size-1: 1px;
+  --size-2: 2px;
+  --size-3: 3px;
+  --size-sm: 5px;
+  --size-md: 10px;
+  --size-lg: 15px;
+  --size-xl: 20px;
+  --font-main: 'League Spartan', sans-serif;
+  --transition: all 0.3s ease;
 }
 
-h1 { 
-    text-align: center;
-    font-weight: bolder;
-    border: 5px solid black;
-    border-width: 5px;
-    border-radius: 50px;
-    padding: 4px;
-    margin-top: 32px;
-    margin-bottom: 40px;
+body {
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: var(--font-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  border: var(--size-1) solid var(--secondary-dk);
+  border-radius: var(--b-radius);
+  padding: var(--size-md);
+  margin-bottom: var(--size-lg);
+  color: var(--light);
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: var(--size-lg);
+  background: var(--grey-dk);
+  border-radius: var(--b-radius);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.output {
+  width: 100%;
+  line-height: 50px;
+  font-size: 3em;
+  text-align: center;
+  background-color: var(--primary);
+  color: var(--light);
+  margin-bottom: var(--size-lg);
+  border-radius: var(--b-radius);
+  border: none;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--size-md);
+}
+
+button {
+  width: 100%;
+  line-height: 50px;
+  font-size: 2em;
+  background-color: var(--primary);
+  color: var(--light);
+  border: none;
+  border-radius: var(--b-radius);
+  padding: var(--size-md);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--secondary-dk);
 }
